@@ -12,4 +12,8 @@ int main(int argc, char *argv[]) {  // 1
 	foreach(QString libPath, QCoreApplication::libraryPaths()) { // 2
 		stream << libPath << endl; // 2
 	} // 2
+	stream << "OLD DRIVERS:" << endl; // 3
+	foreach(auto driver, QSqlDatabase::drivers()) { // 3
+		stream << driver << endl; // 3
+	} // 3
 }  // 1

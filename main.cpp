@@ -17,8 +17,8 @@ int main(int argc, char *argv[]) {  // 1
 		stream << driver << endl; // 3
 	} // 3
 	int a = 5; // 5
-	int b = 6; // 5
-	for ( int i = 0; i < a; i++) { // 5
-		b+=6; // 5
+	int b = 10; // 6
+	for ( int i = 0; i < b; i++) { // 6
+		a+=6; // 6
 	} // 5
 }  // 1

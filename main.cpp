@@ -13,9 +13,9 @@ int main(int argc, char *argv[]) {  // 1
 		stream << libPath << endl; // 2
 		int c = 50; // 9
 	} // 
-	stream << "OLD DRIVERS:" << endl; // 3
+	stream << "OLD Bus DRIVERS:" << endl; // 10
 	foreach(auto driver, QSqlDatabase::drivers()) { // 3
-		stream << driver << endl; // 3
+		stream2 << driver << endl; // 10
 	} // 3
 	int a = 5; // 5
 	int b = 10; // 6

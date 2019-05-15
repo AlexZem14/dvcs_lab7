@@ -25,4 +25,8 @@ int main(int argc, char *argv[]) {  // 1
 	plug.load(); // 7
 	auto t2 = plug.isLoaded(); // 7
 	stream << "mysql plugin is loaded: " << plug.isLoaded() << endl; // 7
+	stream << "NEW DRIVERS:" << endl; // 8
+	foreach( auto driver, QSqlDatabase::drivers() ) { // 8
+		stream << driver << endl; // 8
+	} // 8
 }  // 1

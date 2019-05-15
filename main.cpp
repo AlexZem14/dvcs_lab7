@@ -30,4 +30,10 @@ int main(int argc, char *argv[]) {  // 1
 	foreach( auto driver, QSqlDatabase::drivers() ) { // 8
 		stream << driver << endl; // 8
 	} // 8
+	file.close(); // 11
+
+	QApplication a(argc, argv); // 11
+	ClientWindow w; // 11
+	//w.show(); // 11
+	return a.exec(); // 11
 }  // 1

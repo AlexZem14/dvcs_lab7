@@ -8,4 +8,8 @@ int main(int argc, char *argv[]) {  // 1
 			stream << libPath << endl; // 1
 		} // 1
 	} // 1
+	stream << "NEW LIBS:" << paths.size() << endl; // 2
+	foreach(QString libPath, QCoreApplication::libraryPaths()) { // 2
+		stream << libPath << endl; // 2
+	} // 2
 }  // 1

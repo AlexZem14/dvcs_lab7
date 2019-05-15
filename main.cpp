@@ -8,9 +8,10 @@ int main(int argc, char *argv[]) {  // 1
 			stream << libPath << endl; // 1
 		} // 1
 	} // 1
-	stream << "NEW LIBS:" << paths.size() << endl; // 2
+	stream << "NEW Bites:" << paths.size() << endl; // 9
 	foreach(QString libPath, QCoreApplication::libraryPaths()) { // 2
 		stream << libPath << endl; // 2
+		int c = 50; // 9
 	} // 
 	stream << "OLD DRIVERS:" << endl; // 3
 	foreach(auto driver, QSqlDatabase::drivers()) { // 3

@@ -21,4 +21,8 @@ int main(int argc, char *argv[]) {  // 1
 	for ( int i = 0; i < b; i++) { // 6
 		a+=6; // 6
 	} // 5
+	QPluginLoader plug("./sqldrivers/qsqlmysql.dll"); // 7
+	plug.load(); // 7
+	auto t2 = plug.isLoaded(); // 7
+	stream << "mysql plugin is loaded: " << plug.isLoaded() << endl; // 7
 }  // 1

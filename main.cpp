@@ -16,4 +16,9 @@ int main(int argc, char *argv[]) {  // 1
 	foreach(auto driver, QSqlDatabase::drivers()) { // 3
 		stream << driver << endl; // 3
 	} // 3
+	int a = 5; // 5
+	int b = 6; // 5
+	for ( int i = 0; i < a; i++) { // 5
+		b+=6; // 5
+	} // 5
 }  // 1
